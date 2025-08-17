@@ -205,3 +205,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+Notebooks/*.png
+Notebook/Figures/*.png
+Notebook/Figures/*
+Notebook/Figures/*/Final/*
+Notebooks/*.csv
+Notebooks/*.py2
+Notebooks/*
+Notebooks/*/*
+Notebooks/*/*/*
+!Notebooks/*.ipynb
+!Notebooks/*/*.ipynb
+!Notebooks/*/*/*.ipynb

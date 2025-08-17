@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "causalccus"
+version = "0.1.0"
+description = "Causal inference helpers for Carbon Capture, Utilisation & Storage research"
+authors = [{ name="XAI in Energy Group", email="contact@example.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "statsmodels>=0.14",
+    "linearmodels>=6.1",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "scipy>=1.11",
+    "tqdm"
+]
+[project.optional-dependencies]
+dev = ["pytest", "black", "ruff", "pre-commit"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["CausalCCUS"]
